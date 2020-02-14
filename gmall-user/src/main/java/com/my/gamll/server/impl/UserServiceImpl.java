@@ -1,8 +1,8 @@
-package com.my.gmall.server.impl;
+package com.my.gamll.server.impl;
 
 import com.my.gamll.pojo.UmsMember;
 import com.my.gamll.service.UserService;
-import com.my.gmall.mapper.UserMapper;
+import com.my.gamll.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

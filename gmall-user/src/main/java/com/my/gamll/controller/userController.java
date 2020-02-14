@@ -1,4 +1,4 @@
-package com.my.gmall.controller;
+package com.my.gamll.controller;
 
 import com.my.gamll.pojo.UmsMember;
 import com.my.gamll.service.UserService;

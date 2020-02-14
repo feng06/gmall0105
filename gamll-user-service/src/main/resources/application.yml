@@ -6,9 +6,21 @@ spring:
     url: jdbc:mysql://localhost:3306/jtdb?characterEncoding=utf8&useSSL=true&serverTimezone=UTC&zeroDateTimeBehavior=CONVERT_TO_NULL
     username: root
     password: 123456
+  dubbo:
+    #dubbo中的服务名称
+    application: user-service
+    #dubbo的通讯协议
+    protocol:
+      name: dubbo
+    #zookeeper注册中心地址
+    registry:
+      address: 192.168.221.128:2181
+    # zookeeper通讯协议名称
+      protocol: zookeeper
+    #dubbo的服务扫描路径：因为多个项目都需要用到dubbo并且路径不一样
+    base-package: com.my.gamll
 
 mybatis:
-  type-aliases-package: com.my.sso.pojo
   mapper-locations: classpath:mybatis/mappers/*.xml
   configuration:
     map-underscore-to-camel-case: true
@@ -16,6 +28,8 @@ mybatis:
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
+server:
+  port: 8081
 logging:
   level:
-    root: debug
+    root: info
