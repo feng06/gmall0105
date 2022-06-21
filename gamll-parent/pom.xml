@@ -40,7 +40,7 @@
         <mybatisplus-starter.version>1.0.5</mybatisplus-starter.version>
         <mybatisplus>3.3.1</mybatisplus>
         <druid.version>1.1.21</druid.version>
-        <mysql.version>8.0.19</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <pagehelper.version>1.2.10</pagehelper.version>
         <ionetty.version>4.1.45.Final</ionetty.version>
     </properties>
